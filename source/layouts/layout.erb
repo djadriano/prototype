@@ -19,7 +19,7 @@
   <link rel="shortcut icon" href="<%= data.app.assets.favicon %>">
   
   <!-- stylesheet -->
-  <%= stylesheet_link_tag 'projects/' + path_assets %>
+  <%= stylesheet_link_tag path_assets %>
   
   <!-- javascript: head -->
   <%= javascript_include_tag 'head' %>
@@ -47,7 +47,7 @@
 
 <!-- javascripts
 ========================================================================================================= /// -->
-<%= javascript_include_tag 'projects/' + path_assets %>  
+<%= javascript_include_tag path_assets %>  
 <script>PROTOTYPE.config = <%= data.app.to_json %>;</script>
 </body>
 </html>

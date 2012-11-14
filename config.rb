@@ -34,17 +34,17 @@ helpers do
     else
 
       arr_section = arr_classes[ ( arr_classes.length - 1 ) ].split( '_' )
-      arr_section[ 0 ] + '/' + arr_section[ 1 ]  
+      asset_path  = ''
 
-    # elsif arr_classes.length == 3
+      arr_section.each_with_index do |lista, i|
+        if i == ( arr_section.length - 1 )
+          asset_path = asset_path + lista
+        else
+          asset_path = asset_path + lista + '/'
+        end
+      end
 
-    #   arr_section = arr_classes[ 2 ].split( '_' )
-    #   arr_section[ 1 ] + '/' + arr_section[ 2 ]
-
-    # elsif arr_classes.length == 4
-
-    #   arr_section = arr_classes[ 3 ].split( '_' )
-    #   arr_section[ 1 ] + '/' + arr_section[ 2 ] + '/' + arr_section[ 3 ]
+      asset_path
 
     end
   end
