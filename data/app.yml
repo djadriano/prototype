@@ -16,7 +16,7 @@ defaults:
 modules:
   - item:
     name : 'Cards'
-    url  : 'cards.html'
+    url  : '/modules/cards.html'
   - item:
     name : 'Carousel'
-    url  : 'carousel.html'    
+    url  : '/modules/carousel.html'

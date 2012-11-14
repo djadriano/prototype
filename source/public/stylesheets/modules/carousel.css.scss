@@ -1,0 +1,40 @@
+/*
+ | ------------------------------------------------------------
+ |	Carousel.css
+ |
+ | 	Contains the stylesheets of index page
+ | ------------------------------------------------------------
+ | */
+
+@import 'core/base';
+@import 'shared/carousel';
+@import 'shared/carousel-style';
+
+.m-item {
+  border: 1px solid #e9e9e9;
+  width: 390px;
+  height: 298px;
+}
+
+@media only screen and (max-width : 599px) {
+  .m-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .m-carousel-controls {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 600px) {
+
+  .m-carousel {
+    overflow: hidden;
+    width: 400px;
+  }
+
+  .m-carousel-controls {
+    display: block;
+  }
+}
