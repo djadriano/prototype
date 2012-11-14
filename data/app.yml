@@ -1,18 +1,22 @@
-# facebook metatags
 # -----------------------------------------------------
-facebook_tags:
-  app_id      : '12345678'
-  type        : ''
-  title       : ''
-  image       : ''
-  description : ''
-  url         : ''
-
 # assets
 # -----------------------------------------------------
 assets:
   favicon : ''
 
+# -----------------------------------------------------
 # defaults
 # -----------------------------------------------------
-title : 'Eurodance.com.br'
+defaults:
+  title : 'Prototype'
+
+# -----------------------------------------------------
+# Modules / Sections
+# -----------------------------------------------------
+modules:
+  - item:
+    name : 'Cards'
+    url  : 'cards.html'
+  - item:
+    name : 'Carousel'
+    url  : 'carousel.html'    
