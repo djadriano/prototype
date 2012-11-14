@@ -28,13 +28,24 @@ helpers do
     arr_classes = page_classes.split( ' ' )
 
     if arr_classes.length < 2
+
       arr_classes[ 0 ]
-    elsif arr_classes.length == 3
-      arr_section = arr_classes[ 2 ].split( '_' )
-      arr_section[ 1 ] + '/' + arr_section[ 2 ]
-    elsif arr_classes.length == 4
-      arr_section = arr_classes[ 3 ].split( '_' )
-      arr_section[ 1 ] + '/' + arr_section[ 2 ] + '/' + arr_section[ 3 ]
+
+    else
+
+      arr_section = arr_classes[ ( arr_classes.length - 1 ) ].split( '_' )
+      arr_section[ 0 ] + '/' + arr_section[ 1 ]  
+
+    # elsif arr_classes.length == 3
+
+    #   arr_section = arr_classes[ 2 ].split( '_' )
+    #   arr_section[ 1 ] + '/' + arr_section[ 2 ]
+
+    # elsif arr_classes.length == 4
+
+    #   arr_section = arr_classes[ 3 ].split( '_' )
+    #   arr_section[ 1 ] + '/' + arr_section[ 2 ] + '/' + arr_section[ 3 ]
+
     end
   end
 
